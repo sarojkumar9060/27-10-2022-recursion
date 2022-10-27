@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a=prompt("enter first number ");
+        // var b=prompt("enter second number ");
+        // var c= parseInt(a)+parseInt(b);
+        // document.write(c);
+//         function power(base, exponent) {
+//   if (exponent == 0)
+//     return 1;
+//   else
+//     return base * power(base, exponent - 1);
+// }
+
+//         document.write(Math.pow(2,4));
+
+var exponent = function(a, n) 
+{
+   if (n === 0) 
+   {
+    return 1;
+    }
+  else 
+  {
+    return a * exponent(a, n-1);
+  }
+};
+
+console.log(exponent(4, 2));
+    </script>
+   
+</body>
+</html>

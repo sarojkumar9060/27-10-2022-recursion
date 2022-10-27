@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // SUM = n(N+1)/2
+        // JavaScript program to find the
+        // sum of natural numbers
+        // up to n using recursion
+        
+        // Returns sum of first
+        // n natural numbers
+        function recurSum(n)
+        {
+            if (n <= 1)
+                return n;
+            return n + recurSum(n - 1);
+        }
+        
+        // Driver code
+        let n = 100; //ANSWER 5050
+        document.write(recurSum(n));
+        
+        // This code is contributed by mohan
+        
+        </script>
+        
+</body>
+</html>
